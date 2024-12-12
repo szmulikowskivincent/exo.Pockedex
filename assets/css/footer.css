@@ -1,0 +1,51 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-block-start: 1px solid #ccc;
+}
+
+.footer-logo {
+    inline-size: 170px;
+    margin-inline-start: -290px;
+    block-size: auto;
+}
+
+.footer-user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-img {
+    border-radius: 50%;
+    inline-size: 100px;
+    block-size: 100px;
+    margin-inline-start: -250px;
+    background-color: #ccc;
+}
+
+.footer-text {
+    margin-block-start: 10px;
+    margin-inline-start: -400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skeleton-line {
+    inline-size: 40px;
+    block-size: 8px;
+    margin: 5px 0;
+    background-color: #ddd;
+    border-radius: 4px;
+}
+
+.footer-user-rank {
+    font-size: 14px;
+    font-weight: bold;
+    color: #4caf50;
+}

@@ -1,0 +1,23 @@
+body.desktop {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+body.tablet {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 15px;
+    background-color: #e0e0e0;
+    color: #222;
+}
+
+body.mobile {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}

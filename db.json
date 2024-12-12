@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Pikachu",
+    "id": 1,
+    "type": "Electric",
+    "image": "https://example.com/pikachu.jpg"
+  },
+  {
+    "name": "Capitaine flamme",
+    "id": "2",
+    "type": "Force G",
+    "image": "https://pngimg.com/uploads/pokemon/pokemon_PNG22.png"
+  },
+  {
+    "name": "Tortue",
+    "id": "3",
+    "type": "Tortue Ninja",
+    "image": "https://pngimg.com/uploads/pokemon/pokemon_PNG72.png"
+  }
+]

@@ -1,0 +1,176 @@
+[
+    {
+        "name": "Pikachu",
+        "id": 25,
+        "type": "Electric",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+    },
+    {
+        "name": "Bulbasaur",
+        "id": 1,
+        "type": "Grass/Poison",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png"
+    },
+    {
+        "name": "Charmander",
+        "id": 4,
+        "type": "Fire",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/4.png"
+    },
+    {
+        "name": "Squirtle",
+        "id": 7,
+        "type": "Water",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/7.png"
+    },
+    {
+        "name": "Jigglypuff",
+        "id": 39,
+        "type": "Fairy",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/39.png"
+    },
+    {
+        "name": "Meowth",
+        "id": 52,
+        "type": "Normal",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/52.png"
+    },
+    {
+        "name": "Psyduck",
+        "id": 54,
+        "type": "Water",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/54.png"
+    },
+    {
+        "name": "Magnemite",
+        "id": 81,
+        "type": "Electric/Steel",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/81.png"
+    },
+    {
+        "name": "Poliwag",
+        "id": 60,
+        "type": "Water",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/60.png"
+    },
+    {
+        "name": "Machop",
+        "id": 66,
+        "type": "Fighting",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/66.png"
+    },
+    {
+        "name": "Koffing",
+        "id": 109,
+        "type": "Poison",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/109.png"
+    },
+    {
+        "name": "Ekans",
+        "id": 23,
+        "type": "Poison",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/23.png"
+    },
+    {
+        "name": "Vulpix",
+        "id": 37,
+        "type": "Fire",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/37.png"
+    },
+    {
+        "name": "Zubat",
+        "id": 41,
+        "type": "Poison/Flying",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/41.png"
+    },
+    {
+        "name": "Rattata",
+        "id": 19,
+        "type": "Normal",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/19.png"
+    },
+    {
+        "name": "Geodude",
+        "id": 74,
+        "type": "Rock/Ground",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/74.png"
+    },
+    {
+        "name": "Cubone",
+        "id": 104,
+        "type": "Ground",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/104.png"
+    },
+    {
+        "name": "Poliwhirl",
+        "id": 61,
+        "type": "Water",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/61.png"
+    },
+    {
+        "name": "Seel",
+        "id": 86,
+        "type": "Water",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/86.png"
+    },
+    {
+        "name": "Shellder",
+        "id": 90,
+        "type": "Water",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/90.png"
+    },
+    {
+        "name": "Tentacool",
+        "id": 72,
+        "type": "Water/Poison",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/72.png"
+    },
+    {
+        "name": "Kingler",
+        "id": 99,
+        "type": "Water",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/99.png"
+    },
+    {
+        "name": "Dragonite",
+        "id": 149,
+        "type": "Dragon/Flying",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png"
+    },
+    {
+        "name": "Rhydon",
+        "id": 112,
+        "type": "Ground/Rock",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/112.png"
+    },
+    {
+        "name": "Staryu",
+        "id": 120,
+        "type": "Water",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/120.png"
+    },
+    {
+        "name": "Starmie",
+        "id": 121,
+        "type": "Water/Psychic",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/121.png"
+    },
+    {
+        "name": "Caterpie",
+        "id": 10,
+        "type": "Bug",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"
+    },
+    {
+        "name": "Metapod",
+        "id": 11,
+        "type": "Bug",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/11.png"
+    },
+    {
+        "name": "Butterfree",
+        "id": 12,
+        "type": "Bug/Flying",
+        "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/12.png"
+    }
+]

@@ -1,0 +1,84 @@
+.world-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.world-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px;
+    inline-size: 200px;
+    text-align: center;
+    position: relative;
+}
+
+.world-card h3 {
+    margin: 0;
+}
+
+.world-card img {
+    inline-size: 100%;
+    block-size: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.world-card .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-block-start: 8px;
+}
+
+.world-card .actions button {
+    background-color: #f0f0f0;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.world-card .actions button:hover {
+    background-color: #ddd;
+}
+
+.world-card .number {
+    position: absolute;
+    inset-block-start: 8px;
+    inset-inline-start: 8px;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    padding: 4px 8px;
+}
+
+.comment-section {
+    margin-block-start: 16px;
+}
+
+.comment-section textarea {
+    inline-size: 100%;
+    block-size: 80px;
+    margin-block-end: 8px;
+}
+
+.comment-section button {
+    background-color: #ec48c3;
+    color: white;
+    border: none;
+    inline-size: 205px;
+    padding: 8px 16px;
+    cursor: pointer;
+}
+
+.comment-section button:hover {
+    background-color: #bbb3b9;
+}
+
+.comments {
+    margin-block-start: 16px;
+}
+
+.comment {
+    border-block-start: 1px solid #ccc;
+    padding: 8px 0;
+}

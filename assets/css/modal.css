@@ -1,0 +1,115 @@
+.modal {
+    position: fixed;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inline-size: 100%;
+    block-size: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    max-inline-size: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+#modalImage {
+    max-inline-size: 100%;
+    block-size: auto;
+    border-radius: 8px;
+}
+
+#modalText {
+    margin-block-start: 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+#closeModal {
+    position: absolute;
+    inset-block-start: 10px;
+    inset-inline-end: 10px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+    background: none;
+    border: none;
+}
+
+.toast {
+    visibility: hidden;
+    min-inline-size: 250px;
+    margin-inline-start: -125px;
+    background-color: #3ee74c;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    inset-inline-start: 49%;
+    inset-block-end: 30px;
+    font-size: 17px;
+}
+
+.toast.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {
+        inset-block-end: 0;
+        opacity: 0;
+    }
+
+    to {
+        inset-block-end: 30px;
+        opacity: 1;
+    }
+}
+
+@keyframes fadein {
+    from {
+        inset-block-end: 0;
+        opacity: 0;
+    }
+
+    to {
+        inset-block-end: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        inset-block-end: 30px;
+        opacity: 1;
+    }
+
+    to {
+        inset-block-end: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        inset-block-end: 30px;
+        opacity: 1;
+    }
+
+    to {
+        inset-block-end: 0;
+        opacity: 0;
+    }
+}
