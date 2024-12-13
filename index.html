@@ -10,44 +10,59 @@
     <link rel="stylesheet" href="assets/css/homePage-list.css" />
     <link rel="stylesheet" href="assets/css/modal.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
-
     <link rel="stylesheet" href="assets/css/historique.css" />
     <title>Responsive Pockemon App</title>
   </head>
 
   <body class="desktop">
-    <div class="container">
-      <p>Responsive Pockedex App</p>
-      <div id="status">🖥️ Version: Desktop</div>
-      <button id="toggleMode">🔁 Switch to Dark-Mode</button>
+    <div id="loader">
+      <div class="spinner"></div>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <p>Chargement en cours...</p>
     </div>
 
-    <div class="header">
-      <h1>Monde</h1>
-      <button class="btn-refresh">Relancer une nouvelle liste</button>
-    </div>
+    <div id="main-content" style="display: none">
+      <div class="container">
+        <p>Responsive Pockedex App</p>
+        <div id="status">🖥️ Version: Desktop</div>
+        <button id="toggleMode">🔁 Switch to Dark-Mode</button>
+      </div>
 
-    <div class="table-container">
-      <table id="pokemonTable">
-        <thead>
-          <tr>
-            <th>🆔 Numéro</th>
-            <th>🏷️ Nom</th>
-            <th>⚡ Types</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
-    </div>
+      <div class="header">
+        <h1>Monde</h1>
+        <button class="btn-refresh">Relancer une nouvelle liste</button>
+      </div>
 
-    <div class="modal" id="modal">
-      <div class="modal-content">
-        <span class="modal-close" id="closeModal">&times;</span>
-        <p id="modalText"></p>
+      <div class="table-container">
+        <table id="pokemonTable">
+          <thead>
+            <tr>
+              <th>🆔 Numéro</th>
+              <th>🏷️ Nom</th>
+              <th>⚡ Types</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+
+      <div class="modal" id="modal">
+        <div class="modal-content">
+          <span class="modal-close" id="closeModal">&times;</span>
+          <p id="modalText"></p>
+        </div>
       </div>
     </div>
 
     <script src="assets/js/nav.js"></script>
     <script src="main.js" type="module"></script>
+    <script>
+      window.addEventListener("load", () => {
+        setTimeout(() => {
+          document.getElementById("loader").style.display = "none";
+          document.getElementById("main-content").style.display = "block";
+        }, 5000);
+      });
+    </script>
   </body>
 </html>
