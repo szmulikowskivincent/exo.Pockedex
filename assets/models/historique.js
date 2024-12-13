@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const pokemonCountContainer = document.createElement("div");
   pokemonCountContainer.style.backgroundColor = "red";
   pokemonCountContainer.style.color = "white";
-  pokemonCountContainer.style.width = "450px";
+  pokemonCountContainer.style.width = "350px";
   pokemonCountContainer.style.padding = "10px";
   pokemonCountContainer.style.borderRadius = "5px";
   pokemonCountContainer.style.fontSize = "18px";
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", () => {
   modalContent.style.backgroundColor = "white";
   modalContent.style.borderRadius = "8px";
   modalContent.style.width = "1000px";
-  modalContent.style.height = "850px";
+  modalContent.style.height = "1250px";
   modalContent.style.padding = "20px";
   modalContent.style.textAlign = "center";
   modalContent.style.display = "flex";
@@ -196,7 +196,7 @@ document.addEventListener("DOMContentLoaded", () => {
     imageContainer.style.marginBottom = "20px";
 
     const image = document.createElement("img");
-    image.src = pokemon.image; // Assurez-vous que chaque Pokémon a une propriété `image`
+    image.src = pokemon.image;
     image.alt = pokemon.name;
     image.style.width = "350px";
     image.style.height = "350px";
@@ -253,8 +253,44 @@ document.addEventListener("DOMContentLoaded", () => {
     const pokemon1 = savedPokemons[randomIndex1];
     const pokemon2 = savedPokemons[randomIndex2];
 
+    pokemon1Display.innerHTML = "";
+    pokemon2Display.innerHTML = "";
+
     displayPokemon(pokemon1, pokemon1Display);
     displayPokemon(pokemon2, pokemon2Display);
+
+    const actionContainer = document.createElement("div");
+    actionContainer.style.marginTop = "20px";
+    actionContainer.style.height = "200px";
+    actionContainer.style.overflowY = "auto";
+    actionContainer.style.border = "1px solid #ddd";
+    actionContainer.style.padding = "10px";
+    actionContainer.style.borderRadius = "5px";
+
+    const actionTitle = document.createElement("h3");
+    actionTitle.textContent = "📜 Actions du combat";
+    actionContainer.appendChild(actionTitle);
+
+    modalContent.appendChild(actionContainer);
+
+    const addAction = (icon, description) => {
+      const actionItem = document.createElement("div");
+      actionItem.style.display = "flex";
+      actionItem.style.alignItems = "center";
+      actionItem.style.marginBottom = "10px";
+
+      const actionIcon = document.createElement("span");
+      actionIcon.textContent = icon;
+      actionIcon.style.fontSize = "24px";
+      actionIcon.style.marginRight = "10px";
+
+      const actionText = document.createElement("p");
+      actionText.textContent = description;
+
+      actionItem.appendChild(actionIcon);
+      actionItem.appendChild(actionText);
+      actionContainer.appendChild(actionItem);
+    };
 
     const loadingBarContainer = document.createElement("div");
     loadingBarContainer.style.width = "100%";
@@ -272,14 +308,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let progress = 0;
     const interval = setInterval(() => {
-      progress += 2;
+      progress += 10;
       loadingBar.style.width = `${progress}%`;
+
+      if (progress === 30) {
+        addAction("⚡", `${pokemon1.name} utilise une attaque rapide !`);
+      }
+      if (progress === 60) {
+        addAction("🛡️", `${pokemon2.name} se défend avec un bouclier.`);
+      }
+      if (progress === 90) {
+        addAction("🔥", `${pokemon1.name} déclenche une attaque spéciale !`);
+      }
 
       if (progress >= 100) {
         clearInterval(interval);
         const winner = Math.random() > 0.5 ? pokemon1.name : pokemon2.name;
         const resultMessage = document.createElement("p");
-        resultMessage.textContent = `${winner} a gagné le combat !`;
+        resultMessage.textContent = `${winner} a gagné le combat ! 🎉`;
         modalContent.appendChild(resultMessage);
 
         const combatData = {
@@ -294,7 +340,7 @@ document.addEventListener("DOMContentLoaded", () => {
         combatHistory.push(combatData);
         localStorage.setItem("combatHistory", JSON.stringify(combatHistory));
       }
-    }, 100);
+    }, 1000);
   }
 
   bonusButton.addEventListener("click", () => {
