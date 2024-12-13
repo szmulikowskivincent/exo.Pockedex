@@ -1,11 +1,11 @@
-export default class Store {
-  static getPokemons() {
-    return JSON.parse(localStorage.getItem("pokemons")) || [];
-  }
+const Store = {
+  savePokemons: (pokemons) => {
+    localStorage.setItem("capturedPokemons", JSON.stringify(pokemons));
+  },
 
-  static savePokemon(pokemon) {
-    const savedPokemons = Store.getPokemons();
-    savedPokemons.push(pokemon);
-    localStorage.setItem("pokemons", JSON.stringify(savedPokemons));
-  }
-}
+  getPokemons: () => {
+    return JSON.parse(localStorage.getItem("capturedPokemons")) || [];
+  },
+};
+
+export default Store;

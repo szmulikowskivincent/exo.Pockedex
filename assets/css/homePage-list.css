@@ -2,6 +2,22 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-start: 0;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/406d22da-e458-43dd-b4cb-bdd8590d7879/d508t8a-4bfef298-769f-45ba-adc6-ef13188b79d1.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwic3ViIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsImF1ZCI6WyJ1cm46c2VydmljZTpmaWxlLmRvd25sb2FkIl0sIm9iaiI6W1t7InBhdGgiOiIvZi80MDZkMjJkYS1lNDU4LTQzZGQtYjRjYi1iZGQ4NTkwZDc4NzkvZDUwOHQ4YS00YmZlZjI5OC03NjlmLTQ1YmEtYWRjNi1lZjEzMTg4Yjc5ZDEucG5nIn1dXX0.t7BWqVrB0R9-akppcD05zZUEumk8oEfHwSsrgOQoluc");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.25;
+    z-index: -1;
 }
 
 .header {

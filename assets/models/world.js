@@ -28,10 +28,30 @@ export default class World {
       actions.classList.add("actions");
 
       const starButton = document.createElement("button");
-      starButton.textContent = "★";
+      starButton.textContent = "☆"; // Initialement l'étoile est vide
+      starButton.style.fontSize = "24px"; // Taille de l'étoile
+      starButton.style.color = "gray"; // Couleur par défaut (gris)
 
       const trashButton = document.createElement("button");
       trashButton.textContent = "🗑️";
+
+      // Ajouter l'événement pour l'étoile
+      starButton.addEventListener("click", () => {
+        // Si l'étoile est vide, la rendre pleine et jaune foncé, sinon la vider
+        if (starButton.textContent === "☆") {
+          starButton.textContent = "★"; // Mettre une étoile pleine
+          starButton.style.color = "#ffcc00"; // Mettre l'étoile en jaune foncé
+        } else {
+          starButton.textContent = "☆"; // Vider l'étoile
+          starButton.style.color = "gray"; // Revenir à la couleur grise
+        }
+      });
+
+      // Ajouter l'événement pour la corbeille
+      trashButton.addEventListener("click", () => {
+        // Supprimer le monde (la carte) de l'affichage
+        card.remove();
+      });
 
       actions.appendChild(starButton);
       actions.appendChild(trashButton);

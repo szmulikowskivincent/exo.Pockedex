@@ -63,9 +63,9 @@ export default class HomePageListe {
     pokemonList.forEach((pokemon) => {
       const row = document.createElement("tr");
       row.innerHTML = `
-          <td>${pokemon.number}</td>
-          <td>${pokemon.name}</td>
-          <td>${pokemon.types}</td>
+          <td>🆔 ${pokemon.number}</td>
+          <td>🏷️ ${pokemon.name}</td>
+          <td>⚡${pokemon.types}</td>
         `;
       row.addEventListener("click", () => this.modal.openModal(pokemon));
       this.pokemonTableBody.appendChild(row);

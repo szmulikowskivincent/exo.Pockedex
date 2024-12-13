@@ -58,6 +58,7 @@ export const createNavbar = () => {
   statsElement.className = "navbar-stats";
   statsElement.style.fontWeight = "bold";
   statsElement.style.fontSize = "14px";
+  statsElement.id = "score-stats";
 
   rightSection.appendChild(statsElement);
 

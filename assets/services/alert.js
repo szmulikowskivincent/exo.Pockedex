@@ -8,10 +8,13 @@ export const createPokemonAlert = () => {
   alert.style.fontSize = "14px";
   alert.style.fontWeight = "bold";
   alert.style.marginLeft = "20px";
+  alert.style.marginTop = "10px";
 
-  const savedPokemons = Store.getPokemons();
+  const catchScore = parseInt(localStorage.getItem("catchScore")) || 0;
 
-  alert.textContent = `Pokémons attrapés : ${savedPokemons.length}`;
+  alert.textContent = `Pokémons attrapés : ${catchScore}`;
+
+  document.body.appendChild(alert);
 
   return alert;
 };
