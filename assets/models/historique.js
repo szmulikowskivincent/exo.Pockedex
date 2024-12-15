@@ -46,21 +46,18 @@ document.addEventListener("DOMContentLoaded", () => {
       listItem.style.display = "flex";
       listItem.style.alignItems = "center";
 
-      // Ajouter l'image du Pokémon
       const imageContainer = document.createElement("div");
       const image = document.createElement("img");
-      image.src = pokemon.image; // Assurez-vous que chaque Pokémon a une propriété `image`
+      image.src = pokemon.image;
       image.alt = pokemon.name;
       image.style.width = "50px";
       image.style.height = "50px";
-      image.style.objectFit = "contain"; // Pour garder l'aspect original de l'image
+      image.style.objectFit = "contain";
       imageContainer.appendChild(image);
 
-      // Ajouter les détails du Pokémon
       const details = document.createElement("div");
       details.innerHTML = `<strong>${pokemon.name}</strong><br>Types: ${pokemon.types}`;
 
-      // Ajouter l'image et les détails à l'élément de la liste
       listItem.appendChild(imageContainer);
       listItem.appendChild(details);
       pokemonList.appendChild(listItem);
@@ -180,12 +177,24 @@ document.addEventListener("DOMContentLoaded", () => {
   pokemon2Div.style.marginTop = "20px";
 
   const pokemon1Display = document.createElement("div");
+  const vsLogo = document.createElement("div");
+  vsLogo.textContent = "VS";
+  vsLogo.style.color = "red";
+  vsLogo.style.fontSize = "85px";
+  vsLogo.style.fontWeight = "bold";
+  vsLogo.style.margin = "0 20px";
+  vsLogo.style.display = "flex";
+  vsLogo.style.alignItems = "center";
+  vsLogo.style.justifyContent = "center";
+  vsLogo.style.flexBasis = "10%";
+  vsLogo.style.transform = "translateY(-100px)";
   const pokemon2Display = document.createElement("div");
 
   pokemon1Div.appendChild(pokemon1Display);
   pokemon2Div.appendChild(pokemon2Display);
 
   battleContainer.appendChild(pokemon1Div);
+  battleContainer.appendChild(vsLogo);
   battleContainer.appendChild(pokemon2Div);
 
   modalContent.appendChild(battleContainer);
